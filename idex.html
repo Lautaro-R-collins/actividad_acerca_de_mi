@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad_acerca_de_mi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <body>
+        <header>      
+            <nav id="navbar"> 
+                <div class="logo">LR<span>C</span></div>   
+                <div class="toggle" onclick="toggleMenu();"></div> 
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#abaut-me">Sobre Mi</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contactame">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <!-- Home -->
+            <section id="home">
+                <div class="welcome">
+                    <div class="text">
+                    <h1>Soy <span>Lautaro</span> Rodriguez Collins</h1>
+                    <h3>Desarrollador Front End</h3>
+                    </div>
+                    <div class="img">
+                    <img src="./img/lrc.jpeg" alt="my-photo" class="my-photo">    
+                    </div>           
+                </div>   
+            </section>
+            <!-- Abaut me --> 
+            <section id="abaut-me">
+                <h2>Sobre mi</h2>
+                <p>Hola! Me llamo Lautaro, soy Argentino, y actualmente me formo como desarrollador de software, ya que me apasiona el mundo de la tecnología y la programación.</p>
+                <p>Mi historia con la programación comenzó en la universidad donde estudié una tecnicatura en automatización y producción industrial, que ya finalicé. Fue en mi clase de informática donde vi algo de programación y descubrí que esa era mi pasión. 
+                Actualmente, curso una tecnicatura orientada al desarrollo web y también estoy haciendo diversos cursos y formándome de manera autodidacta.</p>
+            </section>
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <div class="container">
+                    <div class="icon">
+                        <img src="./img/html-5_icon-icons.com_70943.svg" alt="Imagen 1">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/css_logo_icon_247248.svg" alt="Imagen 2">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/javascript_logo_icon_145155.svg" alt="Imagen 3">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/react_logo_icon_144942.svg" alt="Imagen 4">
+                        <p>React</p>
+                    </div>               
+                </div>
+            </section>
+            <!--cite-->
+            <section id="cite">
+                <div class="quote-container">
+                    <blockquote class="quote">
+                      "Nuestra vida es lo que nuestros pensamientos crean"
+                      <cite><strong>- MARCO AURELIO</strong></cite>
+                    </blockquote>
+                  </div>
+            </section>
+            <!--Contacto-->
+            <section id="contactame">
+                <h2>Contacto</h2>             
+                <div class="contact">                    
+                    <form id="contact-form" class="form">
+                        <label for="name">Nombre :</label>
+                        <input type="text" id="name" name="name" placeholder="Escriba su Nombre" required>
+                    
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Escriba su Email" required>
+                    
+                        <label for="subject">Asunto :</label> <!-- Nuevo campo para el asunto -->
+                        <input type="text" id="subject" name="subject" placeholder="Escriba el Asunto" required>
+                    
+                        <label for="message">Mensaje :</label>
+                        <textarea id="message" name="message" placeholder="Escriba su mensaje" rows="6" required></textarea>
+                    
+                        <button type="submit" class="button">Mande su mensaje</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <h4>© IDFR-2023. Lautaro Rodriguez Collins.</h4>
+        </footer>
+        
+        <script type="text/javascript">
+
+            function toggleMenu() {
+                let menuToggle = document.querySelector('.toggle');
+                let menu = document.querySelector('.menu')
+                menuToggle.classList.toggle('active')
+                menu.classList.toggle('active')
+            }   
+        </script>  
+    </body>
+    </html>
+    
+</body>
+</html>
